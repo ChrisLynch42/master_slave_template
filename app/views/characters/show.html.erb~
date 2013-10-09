@@ -1,0 +1,206 @@
+<script>
+  $(document).ready(function(){
+    defaultLocation();
+  });
+
+  function defaultLocation() {
+    fillAjaxHolder('#weaponHolder','/weapons/list?character_id=<%= @character.id %>');
+    fillAjaxHolder('#armorHolder','/armors/list?character_id=<%= @character.id %>');
+    fillAjaxHolder('#featHolder','/feats/list?character_id=<%= @character.id %>');
+    fillAjaxHolder('#skillHolder','/skills/list?character_id=<%= @character.id %>');
+    fillAjaxHolder('#maneuverHolder','/maneuvers/list?character_id=<%= @character.id %>');
+    fillAjaxHolder('#spellHolder','/spells/list?character_id=<%= @character.id %>');
+    fillAjaxHolder('#racialAttributeHolder','/racial_attributes/list?character_id=<%= @character.id %>');
+    fillAjaxHolder('#classAttributeHolder','/class_attributes/list?character_id=<%= @character.id %>');
+  }
+</script>
+<div class="page">
+  <p id="notice"><%= notice %></p>
+  <table class="displayTable">
+    <tr>
+      <td>
+        <img src="/assets/dragon.svg" class="sectionSword"/>
+        <b>Hit<br/>Points</b>
+        <div id="hpBox"><%= @character.hit_points %></div>
+        <b>Armor<br/>Class</b>
+        <div id="acBox"><%= @character.armor_class %></div>
+      </td>
+      <td>
+        <p>
+        <b>Name:</b>
+        <%= @character.name %>
+        </p>
+
+        <p>
+        <b>Class:</b>
+        <%= @character.klass %>
+        </p>
+        <p>
+        <b>Level:</b>
+        <%= @character.level %>
+        </p>
+
+        <p>
+        <b>Race:</b>
+        <%= @character.race %>
+        </p>
+
+        <p>
+        <b>Specialty:</b>
+        <%= @character.specialty %>
+        </p>
+        <p>
+        <b>Background:</b>
+        <%= @character.background %>
+        </p>
+      </td>
+      <td>
+        <p>
+        <b>Speed:</b>
+        <%= @character.speed %>
+        </p>
+
+        <p>
+        <b>Hit dice:</b>
+        <%= @character.hit_dice %>
+        </p>
+
+        <p>
+        <b>Hit points:</b>
+        <%= @character.hit_points %>
+        </p>
+
+        <p>
+        <b>Initiative:</b>
+        <%= @character.initiative %>
+        </p>
+
+      </td>
+      <td>
+        <p>
+        <b>Eyes:</b>
+        <%= @character.eyes %>
+        </p>
+
+        <p>
+        <b>Height:</b>
+        <%= @character.height %>
+        </p>
+
+        <p>
+        <b>Hair:</b>
+        <%= @character.hair %>
+        </p>
+
+        <p>
+        <b>Weight:</b>
+        <%= @character.weight %>
+        </p>
+        <p>
+        <b>Vision:</b>
+        <%= @character.vision %>
+        </p>
+
+        <p>
+        <b>Size:</b>
+        <%= @character.size %>
+        </p>
+
+      </td>
+      <td>
+        <div class="attributeColumn">
+          <p>
+          <b>Strength:</b>
+          <%= @character.strength %>
+          &nbsp;<%= get_attribute_bonus(@character.strength ) %>
+          </p>
+
+          <p>
+          <b>Constitution:</b>
+          <%= @character.constitution %>
+          &nbsp;<%= get_attribute_bonus(@character.constitution) %>
+          </p>
+
+          <p>
+          <b>Dexterity:</b>
+          <%= @character.dexterity %>
+          &nbsp;<%= get_attribute_bonus(@character.dexterity ) %>
+          </p>
+
+          <p>
+          <b>Intelligence:</b>
+          <%= @character.intelligence %>
+          &nbsp;<%= get_attribute_bonus(@character.intelligence ) %>
+          </p>
+
+          <p>
+          <b>Wisdom:</b>
+          <%= @character.wisdom %>
+          &nbsp;<%= get_attribute_bonus(@character.wisdom ) %>
+          </p>
+
+          <p>
+          <b>Charisma:</b>
+          <%= @character.charisma %>
+          &nbsp;<%= get_attribute_bonus(@character.charisma ) %>
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="page">
+  <table class="displayTable">
+    <tr>
+      <td colspan="2" class="section">
+        <div id="descriptionHolder" ><b>Description</b>&nbsp;&nbsp;<%= @character.description %></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section">
+        <div id="weaponHolder">
+        </div>
+      </td>
+      <td class="section">
+        <div id="armorHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="featHolder" >
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="skillHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="racialAttributeHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="classAttributeHolder">
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="spellHolder">
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="page">
+  <%= link_to 'Edit', edit_character_path(@character) %> |
+  <%= link_to 'Back', characters_path %>
+</div>

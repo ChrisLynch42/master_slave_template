@@ -1,0 +1,13 @@
+<h3>Maneuvers</h3>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+<% @maneuvers.each do |maneuver| %>
+  <tr>
+    <td><%= maneuver.title %></td>
+  </tr>
+<% end %>
+</table>

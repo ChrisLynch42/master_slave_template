@@ -1,0 +1,97 @@
+<h1>Listing characters</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Klass</th>
+    <th>Race</th>
+    <th>Specialty</th>
+    <th>Background</th>
+    <th>Eyes</th>
+    <th>Height</th>
+    <th>Hair</th>
+    <th>Weight</th>
+    <th>Description</th>
+    <th>Speed</th>
+    <th>Hit dice</th>
+    <th>Hit points</th>
+    <th>Initiative</th>
+    <th>Vision</th>
+    <th>Size</th>
+    <th>Level</th>
+    <th>Strength</th>
+    <th>Constitution</th>
+    <th>Dexterity</th>
+    <th>Intelligence</th>
+    <th>Wisdom</th>
+    <th>Charisma</th>
+    <th>Base strength</th>
+    <th>Base constitution</th>
+    <th>Base dexterity</th>
+    <th>Base intelligence</th>
+    <th>Base wisdom</th>
+    <th>Base charisma</th>
+    <th>Klass strength</th>
+    <th>Klass constitution</th>
+    <th>Klass dexterity</th>
+    <th>Klass intelligence</th>
+    <th>Klass wisdom</th>
+    <th>Klass charisma</th>
+    <th>Race strength</th>
+    <th>Race constitution</th>
+    <th>Race dexterity</th>
+    <th>Race intelligence</th>
+    <th>Race wisdom</th>
+    <th>Race charisma</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @characters.each do |character| %>
+  <tr>
+    <td><%= character.name %></td>
+    <td><%= character.klass %></td>
+    <td><%= character.race %></td>
+    <td><%= character.specialty %></td>
+    <td><%= character.background %></td>
+    <td><%= character.eyes %></td>
+    <td><%= character.height %></td>
+    <td><%= character.hair %></td>
+    <td><%= character.weight %></td>
+    <td><%= character.description %></td>
+    <td><%= character.speed %></td>
+    <td><%= character.hit_dice %></td>
+    <td><%= character.hit_points %></td>
+    <td><%= character.initiative %></td>
+    <td><%= character.vision %></td>
+    <td><%= character.size %></td>
+    <td><%= character.level %></td>
+    <td><%= character.base_strength %></td>
+    <td><%= character.base_constitution %></td>
+    <td><%= character.base_dexterity %></td>
+    <td><%= character.base_intelligence %></td>
+    <td><%= character.base_wisdom %></td>
+    <td><%= character.base_charisma %></td>
+    <td><%= character.klass_strength %></td>
+    <td><%= character.klass_constitution %></td>
+    <td><%= character.klass_dexterity %></td>
+    <td><%= character.klass_intelligence %></td>
+    <td><%= character.klass_wisdom %></td>
+    <td><%= character.klass_charisma %></td>
+    <td><%= character.race_strength %></td>
+    <td><%= character.race_constitution %></td>
+    <td><%= character.race_dexterity %></td>
+    <td><%= character.race_intelligence %></td>
+    <td><%= character.race_wisdom %></td>
+    <td><%= character.race_charisma %></td>
+    <td><%= link_to 'Show', character %></td>
+    <td><%= link_to 'Edit', edit_character_path(character) %></td>
+    <td><%= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Character', new_character_path %>

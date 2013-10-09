@@ -1,0 +1,36 @@
+<h1>Listing spells</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Level</th>
+    <th>Type</th>
+    <th>Range</th>
+    <th>Damage</th>
+    <th>Ritual</th>
+    <th>Prepared</th>        
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spells.each do |spell| %>
+  <tr>
+    <td><%= spell.title %></td>
+    <td><%= spell.level %></td>
+    <td><%= spell.domain %></td>
+    <td><%= spell.range %></td>
+    <td><%= spell.damage %></td>
+    <td><%= spell.ritual %></td>
+    <td><%= spell.prepared %></td>
+    <td><%= link_to 'Show', spell, :class => 'ajaxLink'  %></td>
+    <td><%= link_to 'Edit', edit_spell_path(spell), :class => 'ajaxLink' %></td>
+    <td><%= link_to 'Destroy', spell_path(spell,:character_id => spell.character_id), :class => 'ajaxDeleteLink' %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Spell', new_spell_path(:character_id => params[:character_id]), :class => 'ajaxLink' %>

@@ -1,0 +1,7 @@
+<h1>Editing armor</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @armor, :class => 'ajaxLink' %> |
+<%= link_to 'Back', armors_path(:character_id => @armor.character_id), :class => 'ajaxLink' %>
+<%= render '/layouts/ajaxify_links' %>

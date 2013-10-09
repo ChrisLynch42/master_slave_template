@@ -1,0 +1,64 @@
+<%= form_for(@spell) do |f| %>
+  <% if @spell.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spell.errors.count, "error") %> prohibited this spell from being saved:</h2>
+
+      <ul>
+      <% @spell.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.hidden_field :character_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br />
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :domain %><br />
+    <%= f.text_field :domain %>
+  </div>
+  <div class="field">
+    <%= f.label :range %><br />
+    <%= f.text_field :range %>
+  </div>
+  <div class="field">
+    <%= f.label :damage %><br />
+    <%= f.text_field :damage %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' }%>
+  </div>
+  <div class="field">
+    <%= f.label :requirement %><br />
+    <%= f.text_area :requirement , {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' }%>
+  </div>
+  <div class="field">
+    <%= f.label :effect %><br />
+    <%= f.text_area :effect, {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' }%>
+  </div>
+  <div class="field">
+    <%= f.label :special %><br />
+    <%= f.text_area :special, {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' }%>
+  </div>
+  <div class="field">
+    <%= f.label :ritual %><br />
+    <%= f.check_box :ritual %>
+  </div>
+  <div class="field">
+    <%= f.label :prepared %><br />
+    <%= f.check_box :prepared %>
+  </div>
+  <div class="actions">
+    <%= f.submit nil, :class => 'ajaxSubmit' %>
+  </div>
+<% end %>

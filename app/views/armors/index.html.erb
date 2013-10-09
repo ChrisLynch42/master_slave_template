@@ -1,0 +1,30 @@
+<h1>Listing armors</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Armor<br/> bonus</th>
+    <th>Weight</th>
+    <th>Speed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @armors.each do |armor| %>
+  <tr>
+    <td><%= armor.title %></td>
+    <td><%= armor.armor_bonus %></td>
+    <td><%= armor.weight %></td>
+    <td><%= armor.speed %></td>
+    <td><%= link_to 'Show', armor, :class => 'ajaxLink'  %></td>
+    <td><%= link_to 'Edit', edit_armor_path(armor), :class => 'ajaxLink' %></td>
+    <td><%= link_to 'Destroy', armor_path(armor,:character_id => armor.character_id), :class => 'ajaxArmorDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Armor', new_armor_path(:character_id => params[:character_id]), :class => 'ajaxArmorLink' %>
+<%= render '/layouts/ajaxify_links' %>

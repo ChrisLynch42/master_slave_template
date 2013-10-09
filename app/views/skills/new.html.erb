@@ -1,0 +1,7 @@
+<h1>New skill</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', skills_path(:character_id => params[:character_id]), :class => 'ajaxSkillLink' %>
+<%= render '/layouts/ajaxify_links' %>
+

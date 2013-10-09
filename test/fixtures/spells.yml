@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  character_id: 1
+  title: MyString
+  level: 1
+  type: 
+  range: MyString
+  damage: MyString
+  description: MyString
+  requirement: MyString
+  effect: MyString
+  special: MyString
+  ritual: false
+  prepared: false
+
+two:
+  character_id: 1
+  title: MyString
+  level: 1
+  type: 
+  range: MyString
+  damage: MyString
+  description: MyString
+  requirement: MyString
+  effect: MyString
+  special: MyString
+  ritual: false
+  prepared: false

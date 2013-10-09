@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  character_id: 1
+  title: MyString
+  description: MyString
+  armor_bonus: 1
+  cost: 1.5
+  weight: 1
+  speed: 1
+  don: 1
+  remove: 1
+
+two:
+  character_id: 1
+  title: MyString
+  description: MyString
+  armor_bonus: 1
+  cost: 1.5
+  weight: 1
+  speed: 1
+  don: 1
+  remove: 1

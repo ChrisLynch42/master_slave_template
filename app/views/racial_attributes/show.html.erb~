@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @racial_attribute.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @racial_attribute.description %>
+</p>
+
+<%= link_to 'Edit', edit_racial_attribute_path(@racial_attribute), :class => 'ajaxRacialAttributeLink' %> |
+<%= link_to 'Back', racial_attributes_path(:character_id => racial_attribute.character_id]), :class => 'ajaxRacialAttributeLink' %>
+<%= render '/layouts/ajaxify_links' %>

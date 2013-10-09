@@ -1,0 +1,24 @@
+<h1>Racial Attributes</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @racial_attributes.each do |racial_attribute| %>
+  <tr>
+    <td><%= racial_attribute.title %></td>
+    <td><%= link_to 'Show', racial_attribute, :class => 'ajaxRacialAttributeLink'  %></td>
+    <td><%= link_to 'Edit', edit_racial_attribute_path(racial_attribute), :class => 'ajaxRacialAttributeLink' %></td>
+    <td><%= link_to 'Destroy', racial_attribute_path(racial_attribute,:character_id => racial_attribute.character_id), :class => 'ajaxRacialAttributeDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Racial Attribute', new_racial_attribute_path(:character_id => params[:character_id]), :class => 'ajaxRacialAttributeLink' %>
+<%= render '/layouts/ajaxify_links' %>

@@ -1,0 +1,20 @@
+<h3>Armors
+ <img src="/assets/Sword-Right.svg" class="sectionSword"/></h3>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Armor<br/> bonus</th>
+    <th>Weight</th>
+    <th>Speed</th>
+  </tr>
+
+<% @armors.each do |armor| %>
+  <tr>
+    <td><%= armor.title %></td>
+    <td><%= armor.armor_bonus %></td>
+    <td><%= armor.weight %></td>
+    <td><%= armor.speed %></td>
+  </tr>
+<% end %>
+</table>

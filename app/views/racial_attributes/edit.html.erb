@@ -1,0 +1,6 @@
+<h1>Editing racial_attribute</h1>
+
+<%= render 'form' %>
+<%= link_to 'Show', @racial_attribute, :class => 'ajaxRacialAttributeLink' %> |
+<%= link_to 'Back', racial_attributes_path(:character_id => @racial_attribute.character_id), :class => 'ajaxRacialAttributeLink' %>
+<%= render '/layouts/ajaxify_links' %>

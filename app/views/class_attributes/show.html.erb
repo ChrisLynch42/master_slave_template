@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @class_attribute.title %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%= @class_attribute.level %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @class_attribute.description %>
+</p>
+
+<%= link_to 'Edit', edit_class_attribute_path(@class_attribute), :class => 'ajaxClassAttributeLink' %> |
+<%= link_to 'Back', class_attributes_path(:character_id => @class_attribute.character_id), :class => 'ajaxClassAttributeLink' %>
+<%= render '/layouts/ajaxify_links' %>

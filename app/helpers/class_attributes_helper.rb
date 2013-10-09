@@ -1,0 +1,2 @@
+module ClassAttributesHelper
+end

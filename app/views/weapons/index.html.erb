@@ -1,0 +1,30 @@
+<h1>Listing weapons</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Damage</th>
+    <th>Attack<br/>bonus</th>
+    <th>Damage<br/>bonus</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @weapons.each do |weapon| %>
+  <tr>
+    <td><%= weapon.title %></td>
+    <td><%= weapon.damage %></td>
+    <td><%= weapon.attack_bonus %></td>
+    <td><%= weapon.damage_bonus %></td>
+    <td><%= link_to 'Show', weapon, :class => 'ajaxLink'  %></td>
+    <td><%= link_to 'Edit', edit_weapon_path(weapon), :class => 'ajaxLink' %></td>
+    <td><%= link_to 'Destroy', weapon_path(weapon,:character_id => weapon.character_id), :class => 'ajaxDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Weapon', new_weapon_path(:character_id => params[:character_id]), :class => 'ajaxLink' %>
+

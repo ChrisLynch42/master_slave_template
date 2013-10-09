@@ -1,0 +1,6 @@
+<h1>Editing weapon</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @weapon, :class => 'ajaxLink' %> |
+<%= link_to 'Back', weapons_path(:character_id => @weapon.character_id), :class => 'ajaxLink' %>

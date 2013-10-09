@@ -1,0 +1,26 @@
+<h1>Class Attributes</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Level</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @class_attributes.each do |class_attribute| %>
+  <tr>
+    <td><%= class_attribute.title %></td>
+    <td><%= class_attribute.level %></td>
+    <td><%= link_to 'Show', class_attribute, :class => 'ajaxClassAttributeLink'  %></td>
+    <td><%= link_to 'Edit', edit_class_attribute_path(class_attribute), :class => 'ajaxClassAttributeLink' %></td>
+    <td><%= link_to 'Destroy', class_attribute_path(class_attribute,:character_id => class_attribute.character_id), :class => 'ajaxClassAttributeDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Class Attribute', new_class_attribute_path(:character_id => params[:character_id]), :class => 'ajaxClassAttributeLink' %>
+<%= render '/layouts/ajaxify_links' %>

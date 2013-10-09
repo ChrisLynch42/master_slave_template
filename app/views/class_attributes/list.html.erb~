@@ -1,0 +1,19 @@
+<div class="sectionTitleGroup"><div class="sectionTitle">Class Attributes</div><object data="/assets/Sword-Right.svg" type="image/svg+xml" class="sectionSword"/></div>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Level</th>
+  </tr>
+
+<% @class_attributes.each do |class_attribute| %>
+  <tr>
+    <td><%= class_attribute.title %></td>
+    <td><%= class_attribute.level %></td>
+  </tr>
+  <tr>
+    <td colspan="7" class="goLeft"><b>Description:</b><%= class_attribute.description %></td>
+  </tr  
+<% end %>
+</table>
+

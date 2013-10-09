@@ -1,0 +1,7 @@
+<h1>Editing maneuver</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @maneuver, :class => 'ajaxManeuverLink' %> |
+<%= link_to 'Back', maneuvers_path(:character_id => @maneuver.character_id), :class => 'ajaxManeuverLink' %>
+<%= render '/layouts/ajaxify_links' %>

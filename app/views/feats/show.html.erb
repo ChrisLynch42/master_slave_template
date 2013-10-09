@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @feat.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @feat.description %>
+</p>
+
+<p>
+  <b>Prerequisite:</b>
+  <%= @feat.prerequisite %>
+</p>
+
+<p>
+  <b>Benefit:</b>
+  <%= @feat.benefit %>
+</p>
+
+<%= link_to 'Edit', edit_feat_path(@feat), :class => 'ajaxFeatLink' %> |
+<%= link_to 'Back', feats_path(:character_id => @feat.character_id), :class => 'ajaxFeatLink' %>
+<%= render '/layouts/ajaxify_links' %>

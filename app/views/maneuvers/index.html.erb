@@ -1,0 +1,24 @@
+<h1>Listing maneuvers</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @maneuvers.each do |maneuver| %>
+  <tr>
+    <td><%= maneuver.title %></td>
+    <td><%= link_to 'Show', maneuver, :class => 'ajaxManeuverLink'  %></td>
+    <td><%= link_to 'Edit', edit_maneuver_path(maneuver), :class => 'ajaxManeuverLink' %></td>
+    <td><%= link_to 'Destroy', maneuver_path(maneuver,:character_id => maneuver.character_id), :class => 'ajaxManeuverDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Maneuver', new_maneuver_path(:character_id => params[:character_id]), :class => 'ajaxManeuverLink' %>
+<%= render '/layouts/ajaxify_links' %>

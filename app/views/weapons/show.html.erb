@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Character:</b>
+  <%= @weapon.character_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @weapon.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @weapon.description %>
+</p>
+
+<p>
+  <b>Damage:</b>
+  <%= @weapon.damage %>
+</p>
+
+<p>
+  <b>Attack bonus:</b>
+  <%= @weapon.attack_bonus %>
+</p>
+
+<p>
+  <b>Damage bonus:</b>
+  <%= @weapon.damage_bonus %>
+</p>
+
+
+<%= link_to 'Edit', edit_weapon_path(@weapon), :class => 'ajaxLink' %> |
+<%= link_to 'Back', weapons_path(:character_id => @weapon.character_id), :class => 'ajaxLink' %>

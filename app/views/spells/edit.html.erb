@@ -1,0 +1,7 @@
+<h1>Editing spell</h1>
+<%= spells_url %>
+<%= render 'form' %>
+
+
+<%= link_to 'Show', @spell, :class => 'ajaxLink' %> |
+<%= link_to 'Back', spells_path(:character_id => @spell.character_id), :class => 'ajaxLink' %>

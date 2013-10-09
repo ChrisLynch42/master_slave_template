@@ -1,0 +1,20 @@
+<h3>Listing feats
+ <img src="/assets/Sword-Left.svg" class="sectionSword"/></h3>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+<% @feats.each do |feat| %>
+  <tr>
+    <td><%= feat.title %></td>
+  </tr>
+  <tr>
+    <td colspan="7" class="goLeft"><b>Description:</b><%= feat.description %></td>
+  </tr>
+  <tr>
+    <td colspan="7" class="goLeft"><b>Effect:</b><%= feat.prerequisite %><hr/></td>
+  </tr>
+<% end %>
+</table>

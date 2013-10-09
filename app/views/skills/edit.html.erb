@@ -1,0 +1,7 @@
+<h1>Editing skill</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @skill, :class => 'ajaxSkillLink' %> |
+<%= link_to 'Back', skills_path(:character_id => @skill.character_id), :class => 'ajaxSkillLink' %>
+<%= render '/layouts/ajaxify_links' %>

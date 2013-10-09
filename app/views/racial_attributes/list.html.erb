@@ -1,0 +1,18 @@
+<h3>Racial Attributes
+  <img src="/assets/Sword-Left.svg" class="sectionSword"/></h3>
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+<% @racial_attributes.each do |racial_attribute| %>
+  <tr>
+    <td><%= racial_attribute.title %></td>
+  </tr>
+  <tr>
+    <td colspan="7" class="goLeft"><b>Description:</b><%= racial_attribute.description %><hr/></td>
+  </tr  
+<% end %>
+</table>
+
+

@@ -1,0 +1,17 @@
+<h3>Skills
+ <img src="/assets/Sword-Right.svg" class="sectionSword"/></h3>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+<% @skills.each do |skill| %>
+  <tr>
+    <td><%= skill.title %></td>
+  </tr>
+  <tr>
+    <td colspan="7" class="goLeft"><b>Description:</b><%= skill.description %><hr/></td>
+  </tr
+<% end %>
+</table>

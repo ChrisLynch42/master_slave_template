@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Title:</b>
+  <%= @armor.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @armor.description %>
+</p>
+
+<p>
+  <b>Armor bonus:</b>
+  <%= @armor.armor_bonus %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @armor.cost %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @armor.weight %>
+</p>
+
+<p>
+  <b>Speed:</b>
+  <%= @armor.speed %>
+</p>
+
+<p>
+  <b>Don:</b>
+  <%= @armor.don %>
+</p>
+
+<p>
+  <b>Remove:</b>
+  <%= @armor.remove %>
+</p>
+
+<%= link_to 'Edit', edit_armor_path(@armor), :class => 'ajaxLink' %> |
+<%= link_to 'Back', armors_path(:character_id => @armor.character_id), :class => 'ajaxLink' %>
+<%= render '/layouts/ajaxify_links' %>

@@ -1,0 +1,20 @@
+<h3>Weapons
+  <img src="/assets/Sword-Left.svg" class="sectionSword"/></h3>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Damage</th>
+    <th>Attack<br/>bonus</th>
+    <th>Damage<br/>bonus</th>
+  </tr>
+
+<% @weapons.each do |weapon| %>
+  <tr>
+    <td><%= weapon.title %></td>
+    <td><%= weapon.damage %></td>
+    <td><%= weapon.attack_bonus %></td>
+    <td><%= weapon.damage_bonus %></td>
+  </tr>
+<% end %>
+</table>

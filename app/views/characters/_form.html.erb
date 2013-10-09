@@ -1,0 +1,251 @@
+<%= form_for(@character) do |f| %>
+  <% if @character.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character.errors.count, "error") %> prohibited this character from being saved:</h2>
+
+      <ul>
+        <% @character.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%
+    attribute = Hash.new()
+    attribute['class'] = 'attribute'
+    attribute['maxlength'] = 2
+    attribute['max'] = 30
+    attribute['min'] = 1
+
+
+  %>
+
+
+  <table>
+    <tr>
+      <td>
+        <img src="/assets/dragon.svg" class="sectionSword"/>
+        <b>Hit<br/>Points</b>
+        <div id="hpBox"><%= f.number_field :hit_points %></div>
+        <b>Armor<br/>Class</b>
+        <div id="acBox"><%= f.number_field :armor_class %></div>
+      </td>
+      <td>
+        <div class="field">
+          <%= f.label :level %><br />
+          <%= f.number_field :level %>
+        </div>
+        <div class="field">
+          <%= f.label :initiative %><br />
+          <%= f.number_field :initiative %>
+        </div>
+        <div class="field">
+          <%= f.label :speed %><br />
+          <%= f.number_field :speed %>
+        </div>
+        <div class="field">
+          <%= f.label :hit_dice %><br />
+          <%= f.text_field :hit_dice %>
+        </div>
+      </td>
+      <td class="sheetSection">
+
+        <div class="field">
+          <%= f.label :name %><br />
+          <%= f.text_field :name %>
+        </div>
+        <div class="field">
+          <%= f.label :klass %><br />
+          <%= f.text_field :klass %>
+        </div>
+        <div class="field">
+          <%= f.label :race %><br />
+          <%= f.text_field :race %>
+        </div>
+        <div class="field">
+          <%= f.label :specialty %><br />
+          <%= f.text_field :specialty %>
+        </div>
+        <div class="field">
+          <%= f.label :background %><br />
+          <%= f.text_field :background %>
+        </div>
+      </td>
+      <td class="sheetSection">
+        <div class="field">
+          <%= f.label :eyes %><br />
+          <%= f.text_field :eyes %>
+        </div>
+        <div class="field">
+          <%= f.label :height %><br />
+          <%= f.text_field :height %>
+        </div>
+        <div class="field">
+          <%= f.label :hair %><br />
+          <%= f.text_field :hair %>
+        </div>
+        <div class="field">
+          <%= f.label :weight %><br />
+          <%= f.text_field :weight %>
+        </div>
+        <div class="field">
+          <%= f.label :vision %><br />
+          <%= f.text_field :vision %>
+        </div>
+        <div class="field">
+          <%= f.label :size %><br />
+          <%= f.text_field :size %>
+        </div>
+      </td>
+      <td>
+        <div class="groupLeft">
+          <label>Attribute</label>
+          <div class="field">
+            <label for="strength">STR</label>
+          </div>
+          <div class="field">
+            <label for="constitution ">CON</label>
+          </div>
+          <div class="field">
+            <label for="dexterity ">DEX</label>
+          </div>
+          <div class="field">
+            <label for="intelligence ">INT</label>
+          </div>
+          <div class="field">
+            <label for="wisdom ">WIS</label>
+          </div>
+          <div class="field">
+            <label for="charisma ">CHA</label>
+          </div>
+        </div>
+        <div class="groupLeft">
+          <label>Base</label>
+
+          <div class="field">
+            <%= f.number_field :base_strength, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :base_constitution, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :base_dexterity, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :base_intelligence, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :base_wisdom, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :base_charisma, attribute %>
+          </div>
+        </div>
+
+        <div class="groupLeft">
+          <label>Race</label>
+
+          <div class="field">
+            <%= f.number_field :race_strength, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :race_constitution, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :race_dexterity, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :race_intelligence, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :race_wisdom, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :race_charisma, attribute %>
+          </div>
+        </div>
+        <div class="groupLeft">
+          <label>Class</label>
+          <div class="field">
+            <%= f.number_field :klass_strength, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :klass_constitution, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :klass_dexterity, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :klass_intelligence, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :klass_wisdom, attribute %>
+          </div>
+          <div class="field">
+            <%= f.number_field :klass_charisma, attribute %>
+          </div>
+
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <table>
+    <tr>
+      <td colspan="2" class="section">
+        <div class="field">
+          <%= f.label :description %><br />
+          <%= f.text_area :description, {:rows => 0, :cols => 0, :class=>'largeDescriptionArea'} %>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section">
+        <div id="weaponHolder">
+        </div>
+      </td>
+      <td class="section">
+        <div id="armorHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="featHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="skillHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="spellHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="racialAttributeHolder">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="section">
+        <div id="classAttributeHolder">
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div id="editHolder">
+  </div>  
+<% end %>

@@ -1,0 +1,21 @@
+<h1>Editing character</h1>
+<script>
+  $(document).ready(function(){
+    defaultLocation();
+  });
+
+  function defaultLocation() {
+    fillAjaxHolder('#weaponHolder','/weapons?character_id=<%= @character.id %>');
+    fillAjaxHolder('#armorHolder','/armors?character_id=<%= @character.id %>');
+    fillAjaxHolder('#featHolder','/feats?character_id=<%= @character.id %>');
+    fillAjaxHolder('#skillHolder','/skills?character_id=<%= @character.id %>');
+    fillAjaxHolder('#maneuverHolder','/maneuvers?character_id=<%= @character.id %>');
+    fillAjaxHolder('#spellHolder','/spells?character_id=<%= @character.id %>');
+    fillAjaxHolder('#racialAttributeHolder','/racial_attributes?character_id=<%= @character.id %>');
+    fillAjaxHolder('#classAttributeHolder','/class_attributes?character_id=<%= @character.id %>');
+  }
+</script>
+<%= render 'form' %>
+
+<%= link_to 'Show', @character %> |
+<%= link_to 'Back', characters_path %>

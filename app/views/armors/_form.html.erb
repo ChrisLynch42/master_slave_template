@@ -1,0 +1,52 @@
+<%= form_for(@armor) do |f| %>
+  <% if @armor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@armor.errors.count, "error") %> prohibited this armor from being saved:</h2>
+
+      <ul>
+      <% @armor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div><%= render '/layouts/ajaxify_links' %>
+  <% end %>
+
+  <div class="field">
+    <%= f.hidden_field :character_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' }%>
+  </div>
+  <div class="field">
+    <%= f.label :armor_bonus %><br />
+    <%= f.number_field :armor_bonus %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.number_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br />
+    <%= f.number_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :don %><br />
+    <%= f.number_field :don %>
+  </div>
+  <div class="field">
+    <%= f.label :remove %><br />
+    <%= f.number_field :remove %>
+  </div>
+  <div class="actions">
+    <%= f.submit nil, :class => 'ajaxArmorSubmit' %>
+  </div>
+<% end %>
