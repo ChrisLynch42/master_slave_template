@@ -1,27 +1,2 @@
 module CharactersHelper
-  def get_attribute_bonus(attribute_score)
-    return_value =""
-    case attribute_score
-    when 1..5
-      return_value="-3"
-    when 6..7
-      return_value="-2"
-    when 8..9
-      return_value="-1"
-    when 10..11
-      return_value="+0"
-    when 12..13
-      return_value="+1"
-    when 14..15
-      return_value="+2"
-    when 16..17
-      return_value="+3"
-    when 18..19
-      return_value="+4"
-    else
-      return_value="+5"
-    end
-
-    return_value
-  end
 end

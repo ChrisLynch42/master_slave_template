@@ -801,10 +801,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -997,10 +997,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -1027,16 +1027,16 @@
     </dia:object>
     <dia:object type="Database - Table" version="0" id="O5">
       <dia:attribute name="obj_pos">
-        <dia:point val="-15.065,27.06"/>
+        <dia:point val="-13.815,27.01"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-15.065,27.06;-6.835,32.16"/>
+        <dia:rectangle val="-13.815,27.01;-5.585,32.11"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="-15.065,27.06"/>
+        <dia:point val="-13.815,27.01"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="8.2300000000000004"/>
@@ -1197,17 +1197,17 @@
     </dia:object>
     <dia:object type="Database - Reference" version="0" id="O6">
       <dia:attribute name="obj_pos">
-        <dia:point val="-6.835,28.46"/>
+        <dia:point val="-5.585,28.41"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-6.835,27.81;0.15,30.35"/>
+        <dia:rectangle val="-5.585,27.76;0.15,30.35"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="-6.835,28.46"/>
-        <dia:point val="-3.3425,28.46"/>
+        <dia:point val="-5.585,28.41"/>
+        <dia:point val="-3.3425,28.41"/>
         <dia:point val="-3.3425,30.35"/>
         <dia:point val="0.15,30.35"/>
       </dia:attribute>
@@ -1217,7 +1217,7 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:attribute name="orth_autoroute">
-        <dia:boolean val="true"/>
+        <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="text_colour">
         <dia:color val="#000000"/>
@@ -1233,10 +1233,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -1449,10 +1449,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -1835,10 +1835,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -1901,10 +1901,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -2367,10 +2367,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -2433,10 +2433,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -2759,10 +2759,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -2825,10 +2825,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -3191,10 +3191,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -3257,10 +3257,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -3743,10 +3743,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -3959,10 +3959,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -4305,10 +4305,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -4371,10 +4371,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -4437,10 +4437,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -4783,10 +4783,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -4849,10 +4849,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -4915,10 +4915,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -4948,16 +4948,16 @@
         <dia:point val="-12.665,10.3271"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-16.065,9.67707;-12.665,29.26"/>
+        <dia:rectangle val="-16.165,9.67707;-12.665,29.21"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
         <dia:point val="-12.665,10.3271"/>
-        <dia:point val="-16.065,10.3271"/>
-        <dia:point val="-16.065,29.26"/>
-        <dia:point val="-15.065,29.26"/>
+        <dia:point val="-16.165,10.3271"/>
+        <dia:point val="-16.165,29.21"/>
+        <dia:point val="-13.815,29.21"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="0"/>
@@ -4965,7 +4965,7 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:attribute name="orth_autoroute">
-        <dia:boolean val="true"/>
+        <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="text_colour">
         <dia:color val="#000000"/>
@@ -4981,10 +4981,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -5177,10 +5177,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -5243,10 +5243,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -5403,16 +5403,16 @@
     </dia:object>
     <dia:object type="Database - Table" version="0" id="O45">
       <dia:attribute name="obj_pos">
-        <dia:point val="22.32,2.72"/>
+        <dia:point val="23.02,2.97"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="22.32,2.72;30.935,6.22"/>
+        <dia:rectangle val="23.02,2.97;31.635,6.47"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="22.32,2.72"/>
+        <dia:point val="23.02,2.97"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="8.6150000000000002"/>
@@ -5536,16 +5536,16 @@
         <dia:point val="37.37,3.97"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="30.935,3.32;37.37,5.72"/>
+        <dia:rectangle val="31.635,3.32;37.37,5.97"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
         <dia:point val="37.37,3.97"/>
-        <dia:point val="34.1525,3.97"/>
-        <dia:point val="34.1525,5.72"/>
-        <dia:point val="30.935,5.72"/>
+        <dia:point val="34.5025,3.97"/>
+        <dia:point val="34.5025,5.97"/>
+        <dia:point val="31.635,5.97"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="0"/>
@@ -5569,10 +5569,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -5602,16 +5602,16 @@
         <dia:point val="12.565,4.15"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="12.565,3.5;22.32,4.92"/>
+        <dia:rectangle val="12.565,3.5;23.02,5.17"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
         <dia:point val="12.565,4.15"/>
-        <dia:point val="17.4425,4.15"/>
-        <dia:point val="17.4425,4.92"/>
-        <dia:point val="22.32,4.92"/>
+        <dia:point val="17.7925,4.15"/>
+        <dia:point val="17.7925,5.17"/>
+        <dia:point val="23.02,5.17"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="0"/>
@@ -5635,10 +5635,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -5665,16 +5665,16 @@
     </dia:object>
     <dia:object type="Database - Table" version="0" id="O48">
       <dia:attribute name="obj_pos">
-        <dia:point val="52.42,-7.23"/>
+        <dia:point val="47.97,-7.53"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="52.42,-7.23;60.65,-3.73"/>
+        <dia:rectangle val="47.97,-7.53;56.2,-4.03"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="52.42,-7.23"/>
+        <dia:point val="47.97,-7.53"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="8.2300000000000004"/>
@@ -5925,18 +5925,18 @@
     </dia:object>
     <dia:object type="Database - Reference" version="0" id="O50">
       <dia:attribute name="obj_pos">
-        <dia:point val="60.65,-5.83"/>
+        <dia:point val="56.2,-6.13"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="60.3,-6.48;61.65,5.22"/>
+        <dia:rectangle val="56.2,-6.78;61.3,5.22"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="60.65,-5.83"/>
-        <dia:point val="61.65,-5.83"/>
-        <dia:point val="61.65,5.22"/>
+        <dia:point val="56.2,-6.13"/>
+        <dia:point val="61.3,-6.13"/>
+        <dia:point val="61.3,5.22"/>
         <dia:point val="60.3,5.22"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
@@ -5961,10 +5961,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -6027,10 +6027,10 @@
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
-        <dia:real val="0"/>
+        <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
+        <dia:enum val="29"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
