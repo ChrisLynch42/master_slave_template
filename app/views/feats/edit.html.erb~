@@ -1,7 +1,0 @@
-<h1>Editing feat</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @feat, :class => 'ajaxFeatLink' %> |
-<%= link_to 'Back', feats_path(:character_id => feat.character_id), :class => 'ajaxFeatLink' %>
-<%= render '/layouts/ajaxify_links' %>

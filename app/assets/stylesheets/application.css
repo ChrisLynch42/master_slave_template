@@ -48,6 +48,24 @@ td {
   border-width: .2em;
 }
 
+#editHolder {
+  width: 80%;
+  margin-left: 10%;
+  border-style: solid;
+  border-width: .2em;
+  padding: 1em;
+}
+
+#menuHolder {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-style: solid;
+  border-width: .2em;
+  padding: 1em;
+}
+
 .sectionTitle {
   padding: 0px;
   margin: 0px;

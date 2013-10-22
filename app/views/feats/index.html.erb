@@ -11,13 +11,12 @@
 <% @feats.each do |feat| %>
   <tr>
     <td><%= feat.title %></td>
-    <td><%= link_to 'Show', feat, :class => 'ajaxFeatLink'  %></td>
-    <td><%= link_to 'Edit', edit_feat_path(feat), :class => 'ajaxFeatLink' %></td>
-    <td><%= link_to 'Destroy', feat_path(feat,:character_id => feat.character_id), :class => 'ajaxFeatDeleteLink' %></td>  
+    <td><%= link_to 'Show', feat, :class => 'ajaxLink'  %></td>
+    <td><%= link_to 'Edit', edit_feat_path(feat), :class => 'ajaxLink' %></td>
+    <td><%= link_to 'Destroy', feat_path(), :class => 'ajaxDeleteLink' %></td>  
   </tr>
 <% end %>
 </table>
 
 <br />
-<%= link_to 'New Feat', new_feat_path(:character_id => params[:character_id]), :class => 'ajaxFeatLink' %>
-<%= render '/layouts/ajaxify_links' %>
+<%= link_to 'New Feat', new_feat_path(), :class => 'ajaxLink' %>

@@ -2,6 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @feat, :class => 'ajaxFeatLink' %> |
-<%= link_to 'Back', feats_path(:character_id => @feat.character_id), :class => 'ajaxFeatLink' %>
-<%= render '/layouts/ajaxify_links' %>
+<%= link_to 'Show', @feat, :class => 'ajaxLink' %> |
+<%= link_to 'Back', feats_path(), :class => 'ajaxLink' %>

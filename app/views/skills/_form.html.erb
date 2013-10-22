@@ -12,9 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.hidden_field :character_id %>
-  </div>
-  <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
@@ -23,6 +20,6 @@
     <%= f.text_area :description, {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' }%>
   </div>
   <div class="actions">
-    <%= f.submit nil, :class => 'ajaxSkillSubmit' %>
+    <%= f.submit nil, :class => 'ajaxSubmit' %>
   </div>
 <% end %>

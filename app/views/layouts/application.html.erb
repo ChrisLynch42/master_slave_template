@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="menuHolder">
+  <a href="/skills" class="ajaxLink">Skills</a> |
+  <a href="/feats" class="ajaxLink">Feats</a> |
+  <a href="/spells" class="ajaxLink">Spells</a> |
+  <a href="/classes" class="ajaxLink">Classes</a> |
+  <a href="/races" class="ajaxLink">Races</a> |
+</div>
+<div id="editHolder">
+  <%= yield %>
 
-<%= yield %>
-
+  <script>
+    setHolder('#editHolder');
+    ajaxifyLinks('.ajaxLink','#editHolder');
+  </script>
+</div>
 </body>
 </html>

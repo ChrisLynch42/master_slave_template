@@ -3,11 +3,19 @@ class SpellsController < ApplicationController
   # GET /spells.json
   #
   def index
-    @viewHolder='#spellHolder'
+    @letters = Skill.select("substr(title,0,1) AS letter" )
 
-    @spells = Spell.where("character_id=?", params[:character_id])
+    if params[:letter].nil?
+      if @letters.nil? || @letters.length < 1
+        params[:letter] = 'A'
+      else
+        params[:letter] = @letters[0].letter
+      end
+    end
+
+    @spells = Spell.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
     respond_to do |format|
-      format.html  { render :template => '/spells/index', :layout => 'sub_page_layout' if request.xhr? }# index.html.erb
+      format.html  { render :layout => 'sub_page_layout' if request.xhr? }# index.html.erb
       format.json { render json: @spells }
     end
   end

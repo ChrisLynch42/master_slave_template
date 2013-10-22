@@ -20,6 +20,5 @@
   <%= @feat.benefit %>
 </p>
 
-<%= link_to 'Edit', edit_feat_path(@feat), :class => 'ajaxFeatLink' %> |
-<%= link_to 'Back', feats_path(:character_id => @feat.character_id), :class => 'ajaxFeatLink' %>
-<%= render '/layouts/ajaxify_links' %>
+<%= link_to 'Edit', edit_feat_path(@feat), :class => 'ajaxLink' %> |
+<%= link_to 'Back', feats_path(), :class => 'ajaxLink' %>

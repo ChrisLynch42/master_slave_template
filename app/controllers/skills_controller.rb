@@ -43,7 +43,6 @@ class SkillsController < ApplicationController
   # GET /skills/new.json
   def new
     @skill = Skill.new
-    @skill.character_id=params[:character_id]
 
     respond_to do |format|
       format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # new.html.erb
@@ -54,6 +53,9 @@ class SkillsController < ApplicationController
   # GET /skills/1/edit
   def edit
     @skill = Skill.find(params[:id])
+    respond_to do | format |
+      format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # edit.html.erb
+    end
   end
 
   # POST /skills

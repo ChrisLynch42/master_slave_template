@@ -2,8 +2,17 @@ class FeatsController < ApplicationController
   # GET /feats
   # GET /feats.json
   def index
+    @letters = Skill.select("substr(title,0,1) AS letter" )
 
-    @feats = Feat.where("character_id=?", params[:character_id])
+    if params[:letter].nil?
+      if @letters.nil? || @letters.length < 1
+        params[:letter] = 'A'
+      else
+        params[:letter] = @letters[0].letter
+      end
+    end
+
+    @feats = Feat.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
     respond_to do |format|
       format.html { render :layout => 'sub_page_layout' if request.xhr? } # index.html.erb
       format.json { render json: @feats }
@@ -34,9 +43,11 @@ class FeatsController < ApplicationController
   # GET /feats/new.json
   def new
     @feat = Feat.new
-    @feat.character_id=params[:character_id]
+    @title = 'New Feat'
+    @form_path = '/feats/form'
+    @back_path = feats_path()
     respond_to do |format|
-      format.html   { render :layout => 'sub_page_layout' if request.xhr? } # new.html.erb
+      format.html   { render :template => '/layouts/new', :layout => 'sub_page_layout' if request.xhr? } # new.html.erb
       format.json { render json: @feat }
     end
   end

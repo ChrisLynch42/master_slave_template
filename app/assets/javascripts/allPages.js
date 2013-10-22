@@ -8,7 +8,7 @@ function submitFormPost(theForm, theFunction ) {
   $.post(theForm.action, $("#" + theForm.id).serialize(),theFunction,'html');
 }
 
-function setEditHolder(theTarget) {
+function setHolder(theTarget) {
   target = $(theTarget)
   theTop = Math.max(0,($(window).height()/2) - (target.outerHeight()/2));
   theTop = theTop + $(window).scrollTop();
@@ -19,13 +19,17 @@ function setEditHolder(theTarget) {
   target.fadeIn();
 }
 
-function fillEditHolder(theTarget, theURL) {
+function fillHolder(theTarget, theURL) {
   $(theTarget).fadeOut("fast",function() {
     $.get(theURL,
       function(data, statusText, xhrObject) {
         target = $(theTarget)
         target.html(data);
-        setEditHolder(theTarget);
+        setHolder(theTarget);
+      }).fail(function(request, requestStatus, error) {
+        target = $(theTarget)
+        target.html(requestStatus + ' - ' + error + "\n" + request.responseText);
+        setHolder(theTarget);
       });
     });
   return false;
@@ -35,7 +39,7 @@ function fillAjaxHolder(theTarget, theURL) {
   $.get(theURL,
     function(data, statusText, xhrObject) {
       $(theTarget).html(data);
-    });
+  });
   return false;
 }
 
@@ -60,8 +64,14 @@ function ajaxifyDeleteLink(theLink,theTarget) {
 function ajaxifyLink(theLink,theTarget) {
   $(theLink).click(function(event){
     event.preventDefault(); // Prevent link from following its href
-    fillEditHolder(theTarget,event.target);
+    fillHolder(theTarget,event.target);
     return false;
+  });
+}
+
+function ajaxifyLinks(identifier,theTarget) {
+  $(identifier).each(function(index){
+    ajaxifyLink(this,theTarget);
   });
 }
 
@@ -79,7 +89,6 @@ function ajaxifySubmit(theButton,theTarget) {
     submitFormPost(event.target.form,
       function(data) {
         writeAjaxHolder(theTarget,data);
-        $('#editHolder').fadeOut();
       }
       );
   });

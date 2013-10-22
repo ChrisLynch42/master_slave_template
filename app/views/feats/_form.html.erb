@@ -12,9 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.hidden_field :character_id %>
-  </div>
-  <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
@@ -24,13 +21,13 @@
   </div>
   <div class="field">
     <%= f.label :prerequisite %><br />
-    <%= f.text_area :prerequisite , {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' } %>
+    <%= f.text_area :prerequisites , {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' } %>
   </div>
   <div class="field">
     <%= f.label :benefit %><br />
     <%= f.text_area :benefit , {:rows=>0, :cols=>0, :class => 'smallDescriptionArea' } %>
   </div>
   <div class="actions">
-    <%= f.submit nil, :class => 'ajaxFeatSubmit' %>
+    <%= f.submit nil, :class => 'ajaxSubmit' %>
   </div>
 <% end %>

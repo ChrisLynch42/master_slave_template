@@ -2,6 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @skill, :class => 'ajaxSkillLink' %> |
-<%= link_to 'Back', skills_path(:character_id => @skill.character_id), :class => 'ajaxSkillLink' %>
-<%= render '/layouts/ajaxify_links' %>
+<%= link_to 'Show', @skill, :class => 'ajaxLink' %> |
+<%= link_to 'Back', skills_path(), :class => 'ajaxLink' %>
