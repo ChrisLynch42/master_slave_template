@@ -1,31 +1,10 @@
 Dnd5::Application.routes.draw do
-  resources :class_attributes do
-    collection do
-      get 'list'
-    end
-  end
-
-
-  resources :racial_attributes do
-    collection do
-      get 'list'
-    end
-  end
-
 
   resources :spells do
     collection do
       get 'list'
     end
   end
-
-
-  resources :maneuvers do
-    collection do
-      get 'list'
-    end
-  end
-
 
   resources :skills do
     collection do

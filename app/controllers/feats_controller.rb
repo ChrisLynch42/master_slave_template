@@ -2,7 +2,7 @@ class FeatsController < ApplicationController
   # GET /feats
   # GET /feats.json
   def index
-    @letters = Skill.select("substr(title,0,1) AS letter" )
+    @letters = Feat.select("substr(title,0,1) AS letter" )
 
     if params[:letter].nil?
       if @letters.nil? || @letters.length < 1
@@ -11,7 +11,6 @@ class FeatsController < ApplicationController
         params[:letter] = @letters[0].letter
       end
     end
-
     @feats = Feat.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
     respond_to do |format|
       format.html { render :layout => 'sub_page_layout' if request.xhr? } # index.html.erb
@@ -32,9 +31,14 @@ class FeatsController < ApplicationController
   # GET /feats/1.json
   def show
     @feat = Feat.find(params[:id])
+    title = 'Feat:  '
+    unless @feat.nil? || @feat.title.nil?
+      title = title + @feat.title
+    end
+    set_view_show_variables(@feat , title )
 
     respond_to do |format|
-      format.html   { render :layout => 'sub_page_layout' if request.xhr? } # show.html.erb
+      format.html   { render :template => '/layouts/show', :layout => 'sub_page_layout' if request.xhr? } # show.html.erb
       format.json { render json: @feat }
     end
   end
@@ -43,9 +47,7 @@ class FeatsController < ApplicationController
   # GET /feats/new.json
   def new
     @feat = Feat.new
-    @title = 'New Feat'
-    @form_path = '/feats/form'
-    @back_path = feats_path()
+    set_view_new_variables(@feat , 'New Feat')
     respond_to do |format|
       format.html   { render :template => '/layouts/new', :layout => 'sub_page_layout' if request.xhr? } # new.html.erb
       format.json { render json: @feat }
@@ -55,6 +57,11 @@ class FeatsController < ApplicationController
   # GET /feats/1/edit
   def edit
     @feat = Feat.find(params[:id])
+    set_view_edit_variables(@feat, 'Edit Feat:')
+    respond_to do |format|
+      format.html   { render :template => '/layouts/edit', :layout => 'sub_page_layout' if request.xhr? } # show.html.erb
+      format.json { render json: @feat }
+    end    
   end
 
   # POST /feats
@@ -96,7 +103,7 @@ class FeatsController < ApplicationController
     @feat.destroy
 
     respond_to do |format|
-      format.html { redirect_to feats_url(:character_id => params[:character_id]) }
+      format.html { redirect_to feats_url }
       format.json { head :no_content }
     end
   end
