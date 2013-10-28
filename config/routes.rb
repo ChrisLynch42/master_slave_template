@@ -36,6 +36,8 @@ Dnd5::Application.routes.draw do
 
   resources :characters
 
+  resources :domains
+  resources :classifications
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

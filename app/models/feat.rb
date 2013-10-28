@@ -1,4 +1,6 @@
 class Feat < ActiveRecord::Base
+  validates :title, { :presence => true }
+  
   ###Do not edit the below 
   ###Begin RDiaTool Code 
   attr_accessible  :title,  :description,  :prerequisites,  :benefit

@@ -21,6 +21,7 @@ class ApplicationController < ActionController::Base
     set_view_title(title)
     set_view_back_path()
     set_view_form_template_path()
+    set_view_show_path(model)
   end
 
 
@@ -36,11 +37,17 @@ class ApplicationController < ActionController::Base
     @edit_path = send edit_function.to_sym, model
   end
 
+  def set_view_show_path(model)
+    edit_function = self.controller_name.singularize + '_path'
+    @show_path = send edit_function.to_sym, model
+  end
+
   def set_view_new_path()
     edit_function = 'new_' + self.controller_name.singularize + '_path'
     @new_path = send edit_function.to_sym
   end
-  
+
+
 
   def set_view_form_template_path
     @form_path = '/' + self.controller_name + '/form'
@@ -75,4 +82,24 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def render_new_html(format, model, title)
+    set_view_new_variables(model , title)
+    format.html { render :template => '/layouts/new', :layout => get_layout(request) }  
+  end
+
+  def render_edit_html(format, model, title)
+    set_view_edit_variables(model , title)
+    format.html { render :template => '/layouts/edit', :layout => get_layout(request) }  
+  end  
+
+  def render_show_html(format, model, title)
+    set_view_show_variables(model , title)
+    format.html { render :template => '/layouts/show', :layout => get_layout(request) }  
+  end 
+
+   def render_index_html(format, title)
+    set_view_index_variables(title)
+    format.html { render :template => '/layouts/index', :layout => get_layout(request) }  
+  end 
+  
 end

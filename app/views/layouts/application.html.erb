@@ -8,18 +8,19 @@
 </head>
 <body>
 <div id="menuHolder">
-  <a href="/skills" class="ajaxLink">Skills</a> |
-  <a href="/feats" class="ajaxLink">Feats</a> |
-  <a href="/spells" class="ajaxLink">Spells</a> |
-  <a href="/classes" class="ajaxLink">Classes</a> |
-  <a href="/races" class="ajaxLink">Races</a> |
+  <a href="/skills" class="ajaxMenuLink">Skills</a> |
+  <a href="/feats" class="ajaxMenuLink">Feats</a> |
+  <a href="/domains" class="ajaxMenuLink">Domains</a> |
+  <a href="/spells" class="ajaxMenuLink">Spells</a> |
+  <a href="/classifications" class="ajaxMenuLink">Classes</a> |
+  <a href="/races" class="ajaxMenuLink">Races</a> |
 </div>
 <div id="editHolder">
   <%= yield %>
 
   <script>
     setHolder('#editHolder');
-    ajaxifyLinks('.ajaxLink','#editHolder');
+    ajaxifyLinks('.ajaxMenuLink','#editHolder');
   </script>
 </div>
 </body>

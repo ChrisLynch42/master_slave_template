@@ -12,9 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.hidden_field :character_id %>
-  </div>
-  <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
@@ -23,8 +20,8 @@
     <%= f.number_field :level %>
   </div>
   <div class="field">
-    <%= f.label :domain %><br />
-    <%= f.text_field :domain %>
+    <%= f.label 'Domain' %><br />
+    <%= f.collection_select(:domain_id, Domain.all, :id, :name, prompt: true) %>
   </div>
   <div class="field">
     <%= f.label :range %><br />
@@ -53,10 +50,6 @@
   <div class="field">
     <%= f.label :ritual %><br />
     <%= f.check_box :ritual %>
-  </div>
-  <div class="field">
-    <%= f.label :prepared %><br />
-    <%= f.check_box :prepared %>
   </div>
   <div class="actions">
     <%= f.submit nil, :class => 'ajaxSubmit' %>

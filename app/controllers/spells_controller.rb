@@ -3,7 +3,7 @@ class SpellsController < ApplicationController
   # GET /spells.json
   #
   def index
-    @letters = Skill.select("substr(title,0,1) AS letter" )
+    @letters = Spell.select("substr(title,0,1) AS letter" )
 
     if params[:letter].nil?
       if @letters.nil? || @letters.length < 1
@@ -14,8 +14,8 @@ class SpellsController < ApplicationController
     end
 
     @spells = Spell.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
-    respond_to do |format|
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }# index.html.erb
+    respond_to do | format |
+      render_index_html(format, 'Spells')    
       format.json { render json: @spells }
     end
   end
@@ -33,33 +33,27 @@ class SpellsController < ApplicationController
   # GET /spells/1.json
   def show
     @spell = Spell.find(params[:id])
-
     respond_to do |format|
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # show.html.erb
+      show_html(format,@spell)
       format.json { render json: @spell }
     end
   end
 
   # GET /spells/new
   # GET /spells/new.json
-  def new
-    @viewHolder='#spellHolder'
-    
+  def new    
     @spell = Spell.new
-    @spell.character_id=params[:character_id]
-
     respond_to do |format|
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # new.html.erb
+      new_html(format, @spell)
       format.json { render json: @spell }
     end
   end
 
   # GET /spells/1/edit
   def edit
-    @viewHolder='#spellHolder'    
     @spell = Spell.find(params[:id])
     respond_to do |format|
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # new.html.erb
+      edit_html(format,@spell)
       format.json { render json: @spell }
     end
   end
@@ -68,16 +62,12 @@ class SpellsController < ApplicationController
   # POST /spells.json
   def create
     @spell = Spell.new(params[:spell])
-    params[:character_id]=@spell.character_id
     respond_to do |format|
       if @spell.save
-        format.html do 
-          flash[:notice] = 'Spell was successfully created.'
-          index
-        end
+        format.html { redirect_to @spell, notice: 'Spell was successfully created.' }
         format.json { render json: @spell, status: :created, location: @spell }
       else
-        format.html { render action: "new" }
+        new_html(format, @spell)
         format.json { render json: @spell.errors, status: :unprocessable_entity }
       end
     end
@@ -87,17 +77,13 @@ class SpellsController < ApplicationController
   # PUT /spells/1.json
   def update
     @spell = Spell.find(params[:id])
-    params[:character_id]=@spell.character_id
 
     respond_to do |format|
       if @spell.update_attributes(params[:spell])
-        format.html do 
-          flash[:notice] = 'Spell was successfully updated.'
-          index
-        end
+        format.html { redirect_to @spell, notice: 'Spell was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        edit_html(format,@spell)
         format.json { render json: @spell.errors, status: :unprocessable_entity }
       end
     end
@@ -110,8 +96,21 @@ class SpellsController < ApplicationController
     @spell.destroy
 
     respond_to do |format|
-      format.html { index }
+      format.html { redirect_to spells_url }
       format.json { head :no_content }
     end
   end
+
+  protected
+  def new_html(format, model)
+    render_new_html(format, model, 'New Spell')
+  end
+
+  def edit_html(format, model)
+    render_edit_html(format, model, 'Spell')
+  end 
+
+  def show_html(format, model)
+    render_show_html(format, model, 'Spell')
+  end  
 end

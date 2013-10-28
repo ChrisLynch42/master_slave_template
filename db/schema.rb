@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131021140024973973791466) do
+ActiveRecord::Schema.define(:version => 20131028161049836836745252) do
 
   create_table "armors", :force => true do |t|
     t.string   "title"
@@ -113,27 +113,27 @@ ActiveRecord::Schema.define(:version => 20131021140024973973791466) do
     t.datetime "updated_at",   :null => false
   end
 
-  create_table "class_attributes", :force => true do |t|
-    t.integer  "class_id"
+  create_table "classification_attributes", :force => true do |t|
+    t.integer  "classification_id"
     t.string   "title"
     t.integer  "level"
     t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
-  create_table "classes", :force => true do |t|
+  create_table "classification_spells", :force => true do |t|
+    t.integer  "classification_id"
+    t.integer  "spell_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "classifications", :force => true do |t|
     t.string   "title"
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-  end
-
-  create_table "classes_spells", :force => true do |t|
-    t.integer  "class_id"
-    t.integer  "spell_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "domains", :force => true do |t|

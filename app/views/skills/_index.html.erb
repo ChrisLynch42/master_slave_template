@@ -9,7 +9,7 @@
 <% @skills.each do |skill| %>
   <tr>
     <td><%= skill.title %></td>
-    <td><%= link_to 'Show', skill, :class => 'ajaxSkillLink'  %></td>
+    <td><%= link_to 'Show', skill, :class => 'ajaxLink'  %></td>
     <td><%= link_to 'Edit', edit_skill_path(skill), :class => 'ajaxLink' %></td>
     <td><%= link_to 'Destroy', skill_path(skill), :class => 'ajaxDeleteLink' %></td>
   </tr>

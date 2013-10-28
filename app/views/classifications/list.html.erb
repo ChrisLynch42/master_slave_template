@@ -1,0 +1,17 @@
+<h3>Skills
+ <img src="/assets/Sword-Right.svg" class="sectionSword"/></h3>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+<% @domains.each do |domain| %>
+  <tr>
+    <td><%= domain.title %></td>
+  </tr>
+  <tr>
+    <td colspan="7" class="goLeft"><b>Description:</b><%= domain.description %><hr/></td>
+  </tr
+<% end %>
+</table>

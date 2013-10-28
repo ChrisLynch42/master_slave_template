@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @domains.each do |domain| %>
+  <tr>
+    <td><%= domain.name %></td>
+    <td><%= domain.description %></td>
+    <td><%= link_to 'Show', domain, :class => 'ajaxLink'  %></td>
+    <td><%= link_to 'Edit', edit_domain_path(domain), :class => 'ajaxLink' %></td>
+    <td><%= link_to 'Destroy', domain_path(domain), :class => 'ajaxDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>

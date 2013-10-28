@@ -12,9 +12,8 @@ class FeatsController < ApplicationController
       end
     end
     @feats = Feat.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
-    set_view_index_variables('Feats')
     respond_to do |format|
-      format.html { render :template => '/layouts/index', :layout => get_layout(request) }
+      render_index_html(format, 'Feats')
       format.json { render json: @feats }
     end
   end
@@ -32,14 +31,9 @@ class FeatsController < ApplicationController
   # GET /feats/1.json
   def show
     @feat = Feat.find(params[:id])
-    title = 'Feat:  '
-    unless @feat.nil? || @feat.title.nil?
-      title = title + @feat.title
-    end
-    set_view_show_variables(@feat , title )
 
-    respond_to do |format|
-      format.html { render :template => '/layouts/show', :layout => get_layout(request) }
+    respond_to do |format|      
+      show_html(format, @feat)
       format.json { render json: @feat }
     end
   end
@@ -48,9 +42,8 @@ class FeatsController < ApplicationController
   # GET /feats/new.json
   def new
     @feat = Feat.new
-    set_view_new_variables(@feat , 'New Feat')
     respond_to do |format|
-      format.html { render :template => '/layouts/new', :layout => get_layout(request) }
+      new_html(format, @feat)
       format.json { render json: @feat }
     end
   end
@@ -58,9 +51,8 @@ class FeatsController < ApplicationController
   # GET /feats/1/edit
   def edit
     @feat = Feat.find(params[:id])
-    set_view_edit_variables(@feat, 'Edit Feat:')
     respond_to do |format|
-      format.html { render :template => '/layouts/edit', :layout => get_layout(request) }
+      edit_html(format,@feat)
       format.json { render json: @feat }
     end    
   end
@@ -75,7 +67,7 @@ class FeatsController < ApplicationController
         format.html { redirect_to @feat, notice: 'Feat was successfully created.' }
         format.json { render json: @feat, status: :created, location: @feat }
       else
-        format.html { render action: "new" }
+        new_html(format, @feat)
         format.json { render json: @feat.errors, status: :unprocessable_entity }
       end
     end
@@ -91,7 +83,7 @@ class FeatsController < ApplicationController
         format.html { redirect_to @feat, notice: 'Feat was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        edit_html(format,@feat)
         format.json { render json: @feat.errors, status: :unprocessable_entity }
       end
     end
@@ -108,4 +100,17 @@ class FeatsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  protected
+  def new_html(format, model)
+    render_new_html(format, model, 'New Feat')
+  end
+
+  def edit_html(format, model)
+    render_edit_html(format, model, 'Feat')
+  end 
+
+   def show_html(format, model)
+    render_show_html(format, model, 'Feat')
+  end  
 end

@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @classifications.each do |classification| %>
+  <tr>
+    <td><%= classification.title %></td>
+    <td><%= classification.description %></td>
+    <td><%= link_to 'Show', classification, :class => 'ajaxLink'  %></td>
+    <td><%= link_to 'Edit', edit_classification_path(classification), :class => 'ajaxLink' %></td>
+    <td><%= link_to 'Destroy', classification_path(classification), :class => 'ajaxDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>
