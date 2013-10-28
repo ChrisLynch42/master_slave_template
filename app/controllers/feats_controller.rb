@@ -12,8 +12,9 @@ class FeatsController < ApplicationController
       end
     end
     @feats = Feat.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
+    set_view_index_variables('Feats')
     respond_to do |format|
-      format.html { render :layout => 'sub_page_layout' if request.xhr? } # index.html.erb
+      format.html { render :template => '/layouts/index', :layout => get_layout(request) }
       format.json { render json: @feats }
     end
   end
@@ -38,7 +39,7 @@ class FeatsController < ApplicationController
     set_view_show_variables(@feat , title )
 
     respond_to do |format|
-      format.html   { render :template => '/layouts/show', :layout => 'sub_page_layout' if request.xhr? } # show.html.erb
+      format.html { render :template => '/layouts/show', :layout => get_layout(request) }
       format.json { render json: @feat }
     end
   end
@@ -49,7 +50,7 @@ class FeatsController < ApplicationController
     @feat = Feat.new
     set_view_new_variables(@feat , 'New Feat')
     respond_to do |format|
-      format.html   { render :template => '/layouts/new', :layout => 'sub_page_layout' if request.xhr? } # new.html.erb
+      format.html { render :template => '/layouts/new', :layout => get_layout(request) }
       format.json { render json: @feat }
     end
   end
@@ -59,7 +60,7 @@ class FeatsController < ApplicationController
     @feat = Feat.find(params[:id])
     set_view_edit_variables(@feat, 'Edit Feat:')
     respond_to do |format|
-      format.html   { render :template => '/layouts/edit', :layout => 'sub_page_layout' if request.xhr? } # show.html.erb
+      format.html { render :template => '/layouts/edit', :layout => get_layout(request) }
       format.json { render json: @feat }
     end    
   end

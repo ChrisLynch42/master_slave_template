@@ -13,8 +13,9 @@ class SkillsController < ApplicationController
     end
 
     @skills = Skill.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
+    set_view_index_variables('Skills')    
     respond_to do |format|
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }# index.html.erb
+      format.html { render :template => '/layouts/index', :layout => get_layout(request) }
       format.json { render json: @skills }
     end
   end
@@ -32,9 +33,14 @@ class SkillsController < ApplicationController
   # GET /skills/1.json
   def show
     @skill = Skill.find(params[:id])
+    title = 'Feat:  '
+    unless @skill.nil? || @skill.title.nil?
+      title = title + @skill.title
+    end
+    set_view_show_variables(@skill , title )
 
     respond_to do |format|
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # show.html.erb
+      format.html { render :template => '/layouts/show', :layout => get_layout(request) }
       format.json { render json: @skill }
     end
   end
@@ -43,9 +49,9 @@ class SkillsController < ApplicationController
   # GET /skills/new.json
   def new
     @skill = Skill.new
-
+    set_view_new_variables(@feat , 'New Feat')
     respond_to do |format|
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # new.html.erb
+      format.html { render :template => '/layouts/new', :layout => get_layout(request) }
       format.json { render json: @skill }
     end
   end
@@ -53,8 +59,10 @@ class SkillsController < ApplicationController
   # GET /skills/1/edit
   def edit
     @skill = Skill.find(params[:id])
-    respond_to do | format |
-      format.html  { render :layout => 'sub_page_layout' if request.xhr? }  # edit.html.erb
+    set_view_edit_variables(@feat, 'Edit Skill:')
+    respond_to do |format|
+      format.html { render :template => '/layouts/edit', :layout => get_layout(request) }
+      format.json { render json: @skill }      
     end
   end
 
