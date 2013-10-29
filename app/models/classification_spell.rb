@@ -6,5 +6,11 @@ class Classification_spell < ActiveRecord::Base
   belongs_to :classification
   ###Do not edit the above 
 
+
+
+
+
+
+
 end
 

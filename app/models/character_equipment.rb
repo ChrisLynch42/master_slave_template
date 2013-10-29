@@ -3,8 +3,14 @@ class Character_equipment < ActiveRecord::Base
   ###Begin RDiaTool Code 
   attr_accessible  :character_id,  :equipment_id
   belongs_to :equipment
-  belongs_to :characters
+  belongs_to :character
   ###Do not edit the above 
+
+
+
+
+
+
 
 
 

@@ -14,7 +14,7 @@ class ClassificationsController < ApplicationController
 
     @classifications = Classification.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
     respond_to do |format|
-      render_index_html(format, 'Classifications')      
+      render_index_html(format, 'Classes')      
       format.json { render json: @classifications }
     end
   end

@@ -13,5 +13,11 @@ class Character < ActiveRecord::Base
   has_many :scenarios, through: :scenario_characters
   ###Do not edit the above 
 
+
+
+
+
+
+
 end
 

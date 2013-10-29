@@ -5,5 +5,11 @@ class Armor < ActiveRecord::Base
   has_many :characters, through: :character_armors
   ###Do not edit the above 
 
+
+
+
+
+
+
 end
 

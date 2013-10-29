@@ -6,5 +6,11 @@ class Scenario < ActiveRecord::Base
   has_many :campaigns, through: :campaign_scenarios
   ###Do not edit the above 
 
+
+
+
+
+
+
 end
 

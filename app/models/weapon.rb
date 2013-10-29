@@ -5,5 +5,11 @@ class Weapon < ActiveRecord::Base
   has_many :characters, through: :character_weapons
   ###Do not edit the above 
 
+
+
+
+
+
+
 end
 

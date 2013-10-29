@@ -1,0 +1,306 @@
+Connecting to database specified by database.yml
+Unable to load maneuver, underlying cause No such file to load -- maneuver 
+
+ /home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:10:in `<class:TestCase>'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:5:in `<top (required)>'
+/home/lynchcs/AAA/master_slave_template/test/unit/armor_test.rb:1:in `require'
+/home/lynchcs/AAA/master_slave_template/test/unit/armor_test.rb:1:in `<top (required)>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `require'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `block (2 levels) in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `block in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `select'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `<main>'
+Unable to load racial_attribute, underlying cause No such file to load -- racial_attribute 
+
+ /home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:10:in `<class:TestCase>'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:5:in `<top (required)>'
+/home/lynchcs/AAA/master_slave_template/test/unit/armor_test.rb:1:in `require'
+/home/lynchcs/AAA/master_slave_template/test/unit/armor_test.rb:1:in `<top (required)>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `require'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `block (2 levels) in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `block in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `select'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `<main>'
+Connecting to database specified by database.yml
+Unable to load maneuver, underlying cause No such file to load -- maneuver 
+
+ /home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:10:in `<class:TestCase>'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:5:in `<top (required)>'
+/home/lynchcs/AAA/master_slave_template/test/functional/armors_controller_test.rb:1:in `require'
+/home/lynchcs/AAA/master_slave_template/test/functional/armors_controller_test.rb:1:in `<top (required)>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `require'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `block (2 levels) in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `block in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `select'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `<main>'
+Unable to load racial_attribute, underlying cause No such file to load -- racial_attribute 
+
+ /home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/activerecord-3.2.11/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:10:in `<class:TestCase>'
+/home/lynchcs/AAA/master_slave_template/test/test_helper.rb:5:in `<top (required)>'
+/home/lynchcs/AAA/master_slave_template/test/functional/armors_controller_test.rb:1:in `require'
+/home/lynchcs/AAA/master_slave_template/test/functional/armors_controller_test.rb:1:in `<top (required)>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `require'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:10:in `block (2 levels) in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `each'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:9:in `block in <main>'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `select'
+/home/lynchcs/.rvm/gems/ruby-1.9.3-p362/gems/rake-10.0.3/lib/rake/rake_test_loader.rb:4:in `<main>'
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "maneuvers"
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "maneuvers"[0m
+SQLite3::SQLException: no such table: maneuvers: DELETE FROM "maneuvers"
+  [1m[35m (0.0ms)[0m  rollback transaction
