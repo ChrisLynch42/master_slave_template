@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Cost</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @equipments.each do |equipment| %>
+  <tr>
+    <td><%= equipment.title %></td>
+    <td><%= equipment.cost %></td>
+    <td><%= equipment.description %></td>
+    <td><%= link_to 'Show', equipment, :class => 'ajaxLink'  %></td>
+    <td><%= link_to 'Edit', edit_equipment_path(equipment), :class => 'ajaxLink' %></td>
+    <td><%= link_to 'Destroy', equipment_path(equipment), :class => 'ajaxDeleteLink' %></td>
+  </tr>
+<% end %>
+</table>

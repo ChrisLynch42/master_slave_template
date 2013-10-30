@@ -1,3 +1,7 @@
+<% @letters.each do | record | %>
+  <a href="/skills?letter=<%= record.letter %>" class="ajaxLink"><%= record.letter %></a> |
+<% end %>
+
 <table>
   <tr>
     <th>Title</th>

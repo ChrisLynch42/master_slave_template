@@ -2,8 +2,8 @@ class SkillsController < ApplicationController
   # GET /skills
   # GET /skills.json
   def index
-    @letters = Skill.select("substr(title,0,1) AS letter" )
-
+    @letters = Skill.order('1').select("Distinct upper(substr(title,1,1)) AS letter" )
+ 
     if params[:letter].nil?
       if @letters.nil? || @letters.length < 1
         params[:letter] = 'A'
@@ -11,10 +11,10 @@ class SkillsController < ApplicationController
         params[:letter] = @letters[0].letter
       end
     end
-
-    @skills = Skill.where("title like upper(:letter)",{:letter => params[:letter] + '%'})
+    url_params = { 'letter' => params[:letter] }
+    @skills = Skill.where("upper(title) like upper(:letter)",{:letter => params[:letter].upcase + '%'})
     respond_to do |format|
-      render_index_html(format, 'Skills')
+      render_index_html(format, 'Skills', url_params)
       format.json { render json: @skills }
     end
   end
@@ -31,9 +31,9 @@ class SkillsController < ApplicationController
   # GET /skills/1.json
   def show
     @skill = Skill.find(params[:id])
-
+    url_params = { 'letter' => get_first_letter(@skill) }
     respond_to do |format|
-      show_html(format,@skill)
+      show_html(format,@skill,url_params)
       format.json { render json: @skill }
     end
   end
@@ -43,8 +43,9 @@ class SkillsController < ApplicationController
   # GET /skills/new.json
   def new
     @skill = Skill.new
+    url_params = { 'letter' => params[:letter] }
     respond_to do |format|
-      new_html(format, @skill)
+      new_html(format, @skill,url_params)
       format.json { render json: @skill }
     end
   end
@@ -52,8 +53,9 @@ class SkillsController < ApplicationController
   # GET /skills/1/edit
   def edit
     @skill = Skill.find(params[:id])
+    url_params = { 'letter' => get_first_letter(@skill) }
     respond_to do |format|
-      edit_html(format,@skill)
+      edit_html(format,@skill,url_params)
       format.json { render json: @skill }      
     end
   end
@@ -65,7 +67,7 @@ class SkillsController < ApplicationController
 
     respond_to do |format|
       if @skill.save
-        format.html { redirect_to @skill, notice: 'Skill was successfully created.' }
+        format.html { redirect_to skill_path(@skill, :letter => get_first_letter(@skill) ), notice: 'Skill was successfully created.' }
         format.json { render json: @skill, status: :created, location: @skill }
       else
         new_html(format, @skill)
@@ -81,7 +83,7 @@ class SkillsController < ApplicationController
 
     respond_to do |format|
       if @skill.update_attributes(params[:skill])
-        format.html { redirect_to @skill, notice: 'Skill was successfully updated.' }
+        format.html { redirect_to skill_path(@skill, :letter => get_first_letter(@skill) ), notice: 'Skill was successfully updated.' }
         format.json { head :no_content }
       else
         edit_html(format,@skill)
@@ -95,23 +97,31 @@ class SkillsController < ApplicationController
   def destroy
     @skill = Skill.find(params[:id])
     @skill.destroy
+    url_params = { :letter => get_first_letter(@skill) }
 
     respond_to do |format|
-      format.html { redirect_to skills_url }
+      format.html { redirect_to skills_url(url_params) }
       format.json { head :no_content }
     end
   end
 
   protected
-  def new_html(format, model)
-    render_new_html(format, model, 'New Skill')
+
+  def get_first_letter(model)
+    unless model.nil? || model.title.nil? 
+      model.title[0]
+    end
   end
 
-  def edit_html(format, model)
-    render_edit_html(format, model, 'Skill')
+  def new_html(format, model, url_params=nil)
+    render_new_html(format, model, 'New Skill', url_params)
+  end
+
+  def edit_html(format, model, url_params=nil)
+    render_edit_html(format, model, 'Skill', url_params)
   end 
 
-  def show_html(format, model)
-    render_show_html(format, model, 'Skill')
+  def show_html(format, model, url_params=nil)    
+    render_show_html(format, model, 'Skill', url_params)
   end 
 end
